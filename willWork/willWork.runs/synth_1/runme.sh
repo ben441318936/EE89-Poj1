@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Ben44/OneDrive/UCLA/EE89/willWork/willWork.runs/synth_1'
+HD_PWD='C:/Users/tuamy/Documents/GitHub/EE89-Poj1/willWork/willWork.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log display.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source display.tcl
+EAStep vivado -log displayAdder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source displayAdder.tcl

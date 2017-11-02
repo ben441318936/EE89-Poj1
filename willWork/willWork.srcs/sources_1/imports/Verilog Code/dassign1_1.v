@@ -82,13 +82,12 @@ endmodule*/
 
 module displayAdder(in,ci0,ci1,out);
 reg[6:0] LED_out;
-input [4:0]in;
-inout ci0,ci1;
+input [4:0] in;
+input ci0,ci1;
 output [6:0] out;
-wire [2:0] sum;
-// Cathode patterns of the 7-segment LED display 
 
-fa5 fuck(in[4],in[3],in[2],in[1],in[0],ci1,ci0,sum[2],sum[1],sum[0]);
+wire [2:0] sum;
+fa5 display(in[4],in[3],in[2],in[1],in[0],ci1,ci0,sum[2],sum[1],sum[0]);
 
 always @(*)
 begin

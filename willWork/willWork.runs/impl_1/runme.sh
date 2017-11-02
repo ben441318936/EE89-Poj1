@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Ben44/OneDrive/UCLA/EE89/willWork/willWork.runs/impl_1'
+HD_PWD='C:/Users/tuamy/Documents/GitHub/EE89-Poj1/willWork/willWork.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .write_bitstream.begin.rst
-EAStep vivado -log display.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source display.tcl -notrace
+EAStep vivado -log displayAdder.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source displayAdder.tcl -notrace
 
 

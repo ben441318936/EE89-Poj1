@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Version: Vivado v2017.3.1 (64-bit)              -->
+<!-- Product Version: Vivado v2017.3 (64-bit)              -->
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="32" Path="C:/Users/Ben44/OneDrive/UCLA/EE89/willWork/willWork.xpr">
+<Project Version="7" Minor="32" Path="C:/Users/tuamy/Documents/GitHub/EE89-Poj1/willWork/willWork.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="5b3804f140404f5bb5cdcd72b429bca3"/>
@@ -104,13 +104,14 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="display"/>
+        <Option Name="TopModule" Val="displayAdder"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/new/letterDisplay.xdc">
         <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
@@ -164,11 +165,11 @@
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017">
-        <ReportConfig Name="synth_1_synth_report_utilization_0" Spec="report_utilization" RunStep="synth_design" ReportFile="display_utilization_synth.rpt" Version="1" Minor="0">
+        <ReportConfig Name="synth_1_synth_report_utilization_0" Spec="report_utilization" RunStep="synth_design" ReportFile="displayAdder_utilization_synth.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value="display_utilization_synth.pb"/>
         </ReportConfig>
-        <ReportConfig Name="synth_1_synth_synthesis_report_0" Spec="" RunStep="synth_design" ReportFile="display.vds">
+        <ReportConfig Name="synth_1_synth_synthesis_report_0" Spec="" RunStep="synth_design" ReportFile="displayAdder.vds">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
       </ReportStrategy>
@@ -193,7 +194,7 @@
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig Name="impl_1_opt_report_drc_0" Spec="report_drc" RunStep="opt_design" ReportFile="display_drc_opted.rpt" Version="1" Minor="0">
+        <ReportConfig Name="impl_1_opt_report_drc_0" Spec="report_drc" RunStep="opt_design" ReportFile="displayAdder_drc_opted.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value="display_drc_opted.pb"/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value="display_drc_opted.rpx"/>
@@ -206,14 +207,14 @@
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig Name="impl_1_place_report_io_0" Spec="report_io" RunStep="place_design" ReportFile="display_io_placed.rpt" Version="1" Minor="0">
+        <ReportConfig Name="impl_1_place_report_io_0" Spec="report_io" RunStep="place_design" ReportFile="displayAdder_io_placed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig Name="impl_1_place_report_utilization_0" Spec="report_utilization" RunStep="place_design" ReportFile="display_utilization_placed.rpt" Version="1" Minor="0">
+        <ReportConfig Name="impl_1_place_report_utilization_0" Spec="report_utilization" RunStep="place_design" ReportFile="displayAdder_utilization_placed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value="display_utilization_placed.pb"/>
         </ReportConfig>
-        <ReportConfig Name="impl_1_place_report_control_sets_0" Spec="report_control_sets" RunStep="place_design" ReportFile="display_control_sets_placed.rpt" Version="1" Minor="0">
+        <ReportConfig Name="impl_1_place_report_control_sets_0" Spec="report_control_sets" RunStep="place_design" ReportFile="displayAdder_control_sets_placed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
         <ReportConfig Name="impl_1_place_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="place_design" Version="1" Minor="0" IsDisabled="true">
@@ -234,36 +235,36 @@
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
         </ReportConfig>
-        <ReportConfig Name="impl_1_route_report_drc_0" Spec="report_drc" RunStep="route_design" ReportFile="display_drc_routed.rpt" Version="1" Minor="0">
+        <ReportConfig Name="impl_1_route_report_drc_0" Spec="report_drc" RunStep="route_design" ReportFile="displayAdder_drc_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value="display_drc_routed.pb"/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value="display_drc_routed.rpx"/>
         </ReportConfig>
-        <ReportConfig Name="impl_1_route_report_methodology_0" Spec="report_methodology" RunStep="route_design" ReportFile="display_methodology_drc_routed.rpt" Version="1" Minor="0">
+        <ReportConfig Name="impl_1_route_report_methodology_0" Spec="report_methodology" RunStep="route_design" ReportFile="displayAdder_methodology_drc_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value="display_methodology_drc_routed.pb"/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value="display_methodology_drc_routed.rpx"/>
         </ReportConfig>
-        <ReportConfig Name="impl_1_route_report_power_0" Spec="report_power" RunStep="route_design" ReportFile="display_power_routed.rpt" Version="1" Minor="0">
+        <ReportConfig Name="impl_1_route_report_power_0" Spec="report_power" RunStep="route_design" ReportFile="displayAdder_power_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value="display_power_summary_routed.pb"/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value="display_power_routed.rpx"/>
         </ReportConfig>
-        <ReportConfig Name="impl_1_route_report_route_status_0" Spec="report_route_status" RunStep="route_design" ReportFile="display_route_status.rpt" Version="1" Minor="0">
+        <ReportConfig Name="impl_1_route_report_route_status_0" Spec="report_route_status" RunStep="route_design" ReportFile="displayAdder_route_status.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="pb" Type="string" Value="display_route_status.pb"/>
         </ReportConfig>
-        <ReportConfig Name="impl_1_route_report_timing_summary_0" Spec="report_timing_summary" RunStep="route_design" ReportFile="display_timing_summary_routed.rpt" Version="1" Minor="0">
+        <ReportConfig Name="impl_1_route_report_timing_summary_0" Spec="report_timing_summary" RunStep="route_design" ReportFile="displayAdder_timing_summary_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOutputOption Name="rpx" Type="string" Value="display_timing_summary_routed.rpx"/>
         </ReportConfig>
-        <ReportConfig Name="impl_1_route_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="route_design" ReportFile="display_incremental_reuse_routed.rpt" Version="1" Minor="0">
+        <ReportConfig Name="impl_1_route_report_incremental_reuse_0" Spec="report_incremental_reuse" RunStep="route_design" ReportFile="displayAdder_incremental_reuse_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig Name="impl_1_route_report_clock_utilization_0" Spec="report_clock_utilization" RunStep="route_design" ReportFile="display_clock_utilization_routed.rpt" Version="1" Minor="0">
+        <ReportConfig Name="impl_1_route_report_clock_utilization_0" Spec="report_clock_utilization" RunStep="route_design" ReportFile="displayAdder_clock_utilization_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig Name="impl_1_route_implementation_log_0" Spec="" RunStep="route_design" ReportFile="display.vdi">
+        <ReportConfig Name="impl_1_route_implementation_log_0" Spec="" RunStep="route_design" ReportFile="displayAdder.vdi">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
         <ReportConfig Name="impl_1_post_route_phys_opt_report_timing_summary_0" Spec="report_timing_summary" RunStep="post_route_phys_opt_design" Version="1" Minor="0">
@@ -273,7 +274,7 @@
         <ReportConfig Name="impl_1_bitstream_report_webtalk_0" Spec="" RunStep="write_bitstream" ReportFile="usage_statistics_webtalk.html">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
-        <ReportConfig Name="impl_1_bitstream_implementation_log_0" Spec="" RunStep="write_bitstream" ReportFile="display.vdi">
+        <ReportConfig Name="impl_1_bitstream_implementation_log_0" Spec="" RunStep="write_bitstream" ReportFile="displayAdder.vdi">
           <ReportConfigOption Name="dummy_option" Type="string"/>
         </ReportConfig>
       </ReportStrategy>
