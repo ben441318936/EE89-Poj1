@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log displayAdder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source displayAdder.tcl
+EAStep vivado -log displayAdder5.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source displayAdder5.tcl

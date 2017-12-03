@@ -64,7 +64,7 @@ endmodule
 
 // 5-input 4-bit ripple-carry adder (structural Verilog)
 // IMPORTANT: Do not change module or port names
-/*module adder5 (a,b,c,d,e,sum);
+module adder5 (a,b,c,d,e,sum);
     input [3:0] a,b,c,d,e;
   	output [6:0] sum;
   
@@ -76,11 +76,9 @@ endmodule
     fa5 fa5_3(a[3],b[3],c[3],d[3],e[3],c8_2,c8_1,c32_1,c16_2,sum[3]);
   	fa 	fa_4(c16_1,c16_2,0,c32_2,sum[4]);
   	fa 	fa_5(c32_1,c32_2,0,sum[6],sum[5]);
-  
-  	
-endmodule*/
+endmodule
 
-module displayAdder(in,ci0,ci1,out);
+/*module displayAdder(in,ci0,ci1,out);
 reg[6:0] LED_out;
 input [4:0] in;
 input ci0,ci1;
@@ -105,6 +103,16 @@ begin
 end
 
 assign out = LED_out;
+
+endmodule*/
+
+module displayAdder5(in1,in2,in3,in4,in5,out);
+input [3:0] in1, in2, in3, in4, in5; //4 bit numbers
+output [6:0] out;
+
+
+adder5 display(in1, in2, in3, in4, in5, out);
+
 
 endmodule
 
